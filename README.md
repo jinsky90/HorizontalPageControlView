@@ -1,6 +1,6 @@
 # HorizontalPageControlView
 
-![demo.gif](https://github.com/jinsky90/HorizontalPageControlView/blob/master/Example/demo.gif)
+![demo.gif](https://github.com/jinsky90/HorizontalPageControlView/blob/master/Resource/demo.gif)
 
 ### Manually
 
@@ -17,10 +17,16 @@ Usage example
 
 1\. Drop HorizontalPageControlView.swift in your project
 ![1.png](https://github.com/jinsky90/HorizontalPageControlView/blob/master/Resource/1.png)
+
+
 2\. Make UIView in StoryBoard
 ![2.png](https://github.com/jinsky90/HorizontalPageControlView/blob/master/Resource/2.png)
+
+
 3\. Designate Custom Class ‘HorizontalPageControlView’ in your PageControlView
 ![3.png](https://github.com/jinsky90/HorizontalPageControlView/blob/master/Resource/3.png)
+
+
 4\. Add code
 
 ```swift

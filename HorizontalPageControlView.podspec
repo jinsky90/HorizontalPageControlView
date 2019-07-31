@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "HorizontalPageControlView"
-  spec.version      = "1.0.0"
+  spec.version      = "1.0.3"
   spec.summary      = "Awesome HorizontalPageControlView!"
 
   spec.swift_version = "4.2"

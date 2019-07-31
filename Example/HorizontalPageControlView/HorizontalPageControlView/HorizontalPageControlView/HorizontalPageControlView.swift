@@ -8,42 +8,42 @@
 
 import UIKit
 
-class HorizontalPageControlView: UIView {
-    @IBInspectable var selectedColor: UIColor? {
+open class HorizontalPageControlView: UIView {
+    @IBInspectable open var selectedColor: UIColor? {
         didSet {
             self.setNeedsDisplay()
         }
     }
 
-    var totalPageCount  : Int = 0 {
+    open var totalPageCount  : Int = 0 {
         didSet {
             self.setNeedsDisplay()
         }
     }
 
-    var indicatorOffset : CGFloat = 0 {
+    open var indicatorOffset : CGFloat = 0 {
         didSet {
             self.setNeedsDisplay()
         }
     }
     
-    override func awakeFromNib() {
+    override open func awakeFromNib() {
         super.awakeFromNib()
         self.layer.masksToBounds = true
         
     }
     
-    override func layoutSubviews() {
+    override open func layoutSubviews() {
         super.layoutSubviews()
         self.layer.cornerRadius = self.bounds.height / 2
     }
     
-    var selectedPosition: Int {
+    open var selectedPosition: Int {
         get { return Int(round(self.indicatorOffset)) }
         set { self.indicatorOffset = CGFloat(newValue) }
     }
     
-    override func draw(_ rect: CGRect) {
+    override open func draw(_ rect: CGRect) {
         super.draw(rect)
         guard self.totalPageCount > 0 else { return }
         

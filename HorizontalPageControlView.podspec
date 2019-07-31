@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
 
   spec.name         = "HorizontalPageControlView"
   spec.version      = "1.0.0"
-  spec.summary      = "HorizontalPageControlView"
+  spec.summary      = "A short description of HorizontalPageControlView."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -39,7 +39,7 @@ Pod::Spec.new do |spec|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  # spec.license      = "MIT"
+  # spec.license      = "MIT (example)"
   # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -53,7 +53,7 @@ Pod::Spec.new do |spec|
   #  profile URL.
   #
 
-  spec.author             = { jinsky90 }
+  spec.author             = "jinsky90"
   # Or just: spec.author    = "sky"
   # spec.authors            = { "sky" => "hnjin@station3.co.kr" }
   # spec.social_media_url   = "https://twitter.com/sky"

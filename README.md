@@ -4,7 +4,7 @@
 
 ### Manually
 
----
+-------------
 
 1\. Download and drop [HorizontalPageControlView.swift in your project
 
@@ -13,17 +13,19 @@
 Usage example
 -------------
 
----
 
 1\. Drop HorizontalPageControlView.swift in your project
+
 ![1.png](https://github.com/jinsky90/HorizontalPageControlView/blob/master/Resource/1.png)
 
 
 2\. Make UIView in StoryBoard
+
 ![2.png](https://github.com/jinsky90/HorizontalPageControlView/blob/master/Resource/2.png)
 
 
 3\. Designate Custom Class ‘HorizontalPageControlView’ in your PageControlView
+
 ![3.png](https://github.com/jinsky90/HorizontalPageControlView/blob/master/Resource/3.png)
 
 
@@ -54,7 +56,7 @@ self.pageControl?.indicatorOffset = offset
 
 ### Attribute
 
----
+-------------
 
 ```swift
 // set SelectedColor in indicator

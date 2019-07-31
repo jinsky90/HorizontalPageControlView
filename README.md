@@ -61,22 +61,19 @@ self.pageControl?.indicatorOffset = offset
 ```swift
 // set SelectedColor in indicator
 @IBInspectable var selectedColor: UIColor? {
-didSet {
-self.setNeedsDisplay()
+didSet { self.setNeedsDisplay() }
 }
-}
+
 // set TotalCount
 var totalPageCount  : Int = 0 {
-didSet {
-self.setNeedsDisplay()
+didSet { self.setNeedsDisplay() }
 }
-}
+
 // set Offset
 var indicatorOffset : CGFloat = 0 {
-didSet {
-self.setNeedsDisplay()
+didSet { self.setNeedsDisplay() }
 }
-}
+
 // usally get index in indicator
 var selectedPosition: Int {
 get { return Int(round(self.indicatorOffset)) }

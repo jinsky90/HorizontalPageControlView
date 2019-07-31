@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VHi-s1-t75">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="i4t-mg-DBq">
+            <objects>
+                <navigationController id="VHi-s1-t75" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="E1b-tC-vK2">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="wKd-uJ-qdZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KJT-fT-hcC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1303" y="97"/>
+        </scene>
+        <!--HorizontalPageControlView-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HorizontalPageControlView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="GwN-df-wV4">
+                                <rect key="frame" x="20" y="64" width="335" height="333.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="10" id="AAu-SC-1ag">
+                                    <size key="itemSize" width="335" height="338"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ImageCell" id="xNP-7C-7hz" customClass="ImageCell" customModule="HorizontalPageControlView" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="-2.5" width="335" height="338"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="335" height="338"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="r0X-rP-uVF">
+                                                    <rect key="frame" x="0.0" y="0.0" width="335" height="338"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="r0X-rP-uVF" secondAttribute="bottom" id="5pS-8F-dAy"/>
+                                            <constraint firstItem="r0X-rP-uVF" firstAttribute="leading" secondItem="xNP-7C-7hz" secondAttribute="leading" id="Dkq-AH-N1R"/>
+                                            <constraint firstItem="r0X-rP-uVF" firstAttribute="top" secondItem="xNP-7C-7hz" secondAttribute="top" id="HCY-Ur-iwd"/>
+                                            <constraint firstAttribute="trailing" secondItem="r0X-rP-uVF" secondAttribute="trailing" id="kh9-hR-lID"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="imageView" destination="r0X-rP-uVF" id="WFc-fJ-qmy"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="FTn-39-0p2"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="UPf-PT-Qt3"/>
+                                </connections>
+                            </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TK7-bS-2wq" customClass="HorizontalPageControlView" customModule="HorizontalPageControlView" customModuleProvider="target">
+                                <rect key="frame" x="87.5" y="637" width="200" height="10"/>
+                                <color key="backgroundColor" red="0.85882352941176465" green="0.8666666666666667" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="LKp-dx-PvY"/>
+                                    <constraint firstAttribute="height" constant="10" id="g1m-lo-cLt"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedColor">
+                                        <color key="value" red="0.40784313725490196" green="0.42745098039215684" blue="0.55294117647058827" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GwN-df-wV4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="VHi-et-Eiq"/>
+                            <constraint firstItem="GwN-df-wV4" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="lVJ-Ot-2OM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TK7-bS-2wq" secondAttribute="bottom" constant="20" id="rid-Bn-hN5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GwN-df-wV4" secondAttribute="trailing" constant="20" id="ry7-aq-eTl"/>
+                            <constraint firstItem="GwN-df-wV4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="s19-Hs-bcm"/>
+                            <constraint firstItem="TK7-bS-2wq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sAy-hM-Txl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="HorizontalPageControlView" id="SRe-wb-9We"/>
+                    <connections>
+                        <outlet property="collectionView" destination="GwN-df-wV4" id="IPN-47-U8Z"/>
+                        <outlet property="pageControl" destination="TK7-bS-2wq" id="LbQ-i9-aa4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-522" y="97"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1" width="960" height="721"/>
+    </resources>
+</document>

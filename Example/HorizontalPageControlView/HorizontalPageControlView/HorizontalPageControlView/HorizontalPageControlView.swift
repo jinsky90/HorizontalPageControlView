@@ -1,8 +1,8 @@
 //
 //  HorizontalPageControlView.swift
-//  DabangOwner
+//  HorizontalPageControlView
 //
-//  Created by 진하늘 on 25/01/2019.
+//  Created by 진하늘 on 30/07/2019.
 //  Copyright © 2019 YoungSu Park. All rights reserved.
 //
 

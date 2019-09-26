@@ -6,7 +6,7 @@
 
 -------------
 
-1\. Download and drop [HorizontalPageControlView.swift in your project
+1\. Download and drop [HorizontalPageControlView.swift] in your project
 
 2\. Configuration
 

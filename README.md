@@ -2,17 +2,21 @@
 
 ![demo.gif](https://github.com/jinsky90/HorizontalPageControlView/blob/master/Resource/demo.gif)
 
-### Manually
+# 👨‍💻 Installation
 
--------------
+### Manual
 
 1\. Download and drop [HorizontalPageControlView.swift] in your project
 
 2\. Configuration
 
-Usage example
--------------
+### Carthage
+- Add `github "jinsky90/HorizontalPageControlView"` to your `Cartfile`.
 
+### Cocoapods
+- Add pod `HorizontalPageControlView` to your pod file.
+
+# 👩‍🍳 Usage
 
 1\. Drop HorizontalPageControlView.swift in your project
 
@@ -55,9 +59,7 @@ extension ViewController: UICollectionViewDelegate {
 }
 ```
 
-### Attribute
-
--------------
+# 👩‍🎨  Attribute
 
 ```swift
 
